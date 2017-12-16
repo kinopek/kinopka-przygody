@@ -5,7 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour {
 	public float speed = 50f;
 	public float jump_power = 150f;
-	public bool grounded = false;
+	public bool grounded;
 	private Rigidbody2D rb2D;
 
 
