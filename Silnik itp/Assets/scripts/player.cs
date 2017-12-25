@@ -19,7 +19,7 @@ public class player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         anim.SetBool("grounded",grounded);
-        anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        anim.SetFloat("speed", Mathf.Abs(rb2D.velocity.x));
 
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
