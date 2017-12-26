@@ -35,4 +35,14 @@ public class camera_follow : MonoBehaviour {
 
     }
 
+    public void SetMinCamPosition()
+    {
+        min_camera_pos = gameObject.transform.position;
+    }
+
+    public void SetMaxCamPostion()
+    {
+        max_camera_pos = gameObject.transform.position;
+    }
+
 }
