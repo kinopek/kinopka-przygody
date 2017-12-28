@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class player : MonoBehaviour {
     public float maxSpeed = 3;
@@ -11,23 +10,16 @@ public class player : MonoBehaviour {
 	private Rigidbody2D rb2D;
     private Animator anim;
 
-	//Stats
-	public int currentHP;
-	public int maxHP = 5;
-
-
 	// Use this for initialization
 	void Start () {
 		rb2D = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
-
-		currentHP = maxHP;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         anim.SetBool("grounded",grounded);
-        anim.SetFloat("speed", Mathf.Abs(rb2D.velocity.x));
+        anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
@@ -41,12 +33,6 @@ public class player : MonoBehaviour {
         {
             rb2D.AddForce(Vector2.up * jump_power);
         }
-		if (currentHP > maxHP) {
-			currentHP = maxHP;
-		}
-		if (currentHP <= 0) {
-			Die ();
-		}
     }
 
 	void FixedUpdate () {
@@ -61,41 +47,5 @@ public class player : MonoBehaviour {
             rb2D.velocity = new Vector2(-maxSpeed, rb2D.velocity.y);
         }
     }
-
-	void Die () {
-		//restart
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
-
-	}
-		
-
-	public void Damage(int dmg){
-		
-		if (dmg > currentHP) {
-
-			currentHP = 0;
-			
-		}
-		else {
-
-			currentHP -= dmg;
-		}	
-	}
-
-}
-	
-
-
-public IEnumerator Knockback(float knockDuration, float knockBackPwr, Vector3 knockBackDir){
-
-	float timer = 0;
-
-	while (knockDur > timer){
-
-		timer+=Time.deltaTime;
-
-		rb2D.AddForce(new Vector3 (knockbackDir.x * -100, knockbackDir.y * knockbackPwr, transform.position.z));
-
-	}
 
 }
