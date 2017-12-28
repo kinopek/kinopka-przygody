@@ -330,8 +330,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalScale: {x: 0.7399225, y: 0.71791595, z: 1}
 =======
+=======
+>>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
@@ -407,8 +410,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1001451351
 =======
+=======
+>>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
@@ -694,6 +700,9 @@ GameObject:
 --- !u!61 &680765532
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 62d4f5b... UI, engine, objects
+=======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
@@ -706,7 +715,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1753011047}
+=======
+  m_GameObject: {fileID: 680765531}
+>>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
   m_GameObject: {fileID: 680765531}
 >>>>>>> parent of 62d4f5b... UI, engine, objects
@@ -725,7 +738,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Offset: {x: -3.56294, y: 2.2118056}
+=======
+  m_Offset: {x: -0.94201803, y: 0.12394953}
+>>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
   m_Offset: {x: -0.94201803, y: 0.12394953}
 >>>>>>> parent of 62d4f5b... UI, engine, objects
@@ -748,11 +765,16 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 0.7292075, y: 0.8421016}
   m_EdgeRadius: 0
 =======
   m_Size: {x: 10.073127, y: 1.247899}
   m_EdgeRadius: 0
+=======
+  m_Size: {x: 10.073127, y: 1.247899}
+  m_EdgeRadius: 0
+>>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
   m_Size: {x: 10.073127, y: 1.247899}
   m_EdgeRadius: 0
@@ -1676,6 +1698,9 @@ RectTransform:
   m_Pivot: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 62d4f5b... UI, engine, objects
+=======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
 =======
 >>>>>>> parent of 62d4f5b... UI, engine, objects
